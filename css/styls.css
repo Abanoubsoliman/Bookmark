@@ -1,0 +1,124 @@
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+::selection {
+  background-color: #fe7260;
+  color: #352e28;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #dee0f7;
+}
+
+main h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+
+main h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #6097fe;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+main h1:hover::before {
+  height: 50%;
+}
+
+.bookmark-body {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.bookmark-body h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3e3ca5, #8e81d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #1daaeb;
+  --bs-btn-border-color: #1d99eb;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0867d3;
+  --bs-btn-hover-border-color: #6408ba;
+}
+
+.btn-submit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2d38d1;
+  --bs-btn-border-color: #2d4bd1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6146e9;
+  --bs-btn-hover-border-color: #928caf;
+}
+
+.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #3bb2b2;
+  --bs-btn-border-color: #3bb2b2;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #23819e;
+  --bs-btn-hover-border-color: #185a80;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+.box-info {
+  background-color: #0007;
+}
+
+.box-conent {
+  width: 500px;
+  z-index: 10;
+}
+
+.box-conent p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #352e28;
+}
+
+.rules li {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.rules i {
+  color: #bb4120;
+}
+
+.circles{
+font-size: 50px; 
+
+}
+
+
+.logo {
+  width: 40px;
+}
